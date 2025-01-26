@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'deb:debouncer|out_reg'
+Slack : -6.001
+TNS   : -300.633
+
+Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
+Slack : -1.067
+TNS   : -8.973
+
+Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
+Slack : -0.118
+TNS   : -0.118
+
+Type  : Slow 1200mV 85C Model Hold 'deb:debouncer|out_reg'
+Slack : 0.488
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -72.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'deb:debouncer|out_reg'
+Slack : -1.000
+TNS   : -58.000
+
+Type  : Slow 1200mV 0C Model Setup 'deb:debouncer|out_reg'
+Slack : -5.371
+TNS   : -267.892
+
+Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -0.842
+TNS   : -4.597
+
+Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
+Slack : -0.123
+TNS   : -0.123
+
+Type  : Slow 1200mV 0C Model Hold 'deb:debouncer|out_reg'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -72.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'deb:debouncer|out_reg'
+Slack : -1.000
+TNS   : -58.000
+
+Type  : Fast 1200mV 0C Model Setup 'deb:debouncer|out_reg'
+Slack : -2.885
+TNS   : -143.862
+
+Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -0.154
+TNS   : -0.184
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
+Slack : -0.094
+TNS   : -0.094
+
+Type  : Fast 1200mV 0C Model Hold 'deb:debouncer|out_reg'
+Slack : 0.191
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -91.970
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'deb:debouncer|out_reg'
+Slack : -1.000
+TNS   : -58.000
+
+------------------------------------------------------------

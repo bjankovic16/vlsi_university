@@ -1,0 +1,1119 @@
+# vsim -c -lib work -wlf ./waveform.wlf -do "./config/run.tcl" optimized_design 
+# Start time: 16:55:30 on Jan 31,2023
+# //  Questa Sim-64
+# //  Version 10.4c win64 Jul 20 2015
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Loading work.ps2(fast)
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.testbench_sv_unit(fast)
+# Loading work.testbench(fast)
+# Loading work.ps2_if(fast__1)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.ps2_if(fast)
+# ** Warning: (vsim-3764) C:/questasim64_10.4c/win64/../verilog_src/uvm-1.1d/src/tlm1/uvm_analysis_port.svh(114): Stand-alone call to function 'write' treated as implicit void cast.
+#    Time: 0 ps  Iteration: 0  Region: /uvm_pkg::uvm_analysis_imp #(testbench_sv_unit::ps2_item, testbench_sv_unit::scoreboard) File: C:/questasim64_10.4c/win64/../verilog_src/uvm-1.1d/src/uvm_pkg.sv
+# Loading C:/questasim64_10.4c/uvm-1.1d\win64\uvm_dpi.dll
+# do ./config/run.tcl
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.2
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test test...
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               test                    -     @462 
+#   e0                       env                     -     @471 
+#     a0                     agent                   -     @483 
+#       d0                   driver                  -     @500 
+#         rsp_port           uvm_analysis_port       -     @517 
+#         seq_item_port      uvm_seq_item_pull_port  -     @508 
+#       m0                   monitor                 -     @526 
+#         mon_analysis_port  uvm_analysis_port       -     @659 
+#       s0                   uvm_sequencer           -     @534 
+#         rsp_export         uvm_analysis_export     -     @542 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @648 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     sb0                    scoreboard              -     @491 
+#       mon_analysis_imp     uvm_analysis_imp        -     @673 
+# --------------------------------------------------------------
+# 
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 20: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 1/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @713                    
+#   data_key                     integral  1     'h1                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    20                      
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 20: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 30: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 30: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 2/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @722                    
+#   data_key                     integral  1     'h1                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    30                      
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 30: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 60: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 60: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 3/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @730                    
+#   data_key                     integral  1     'h1                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    60                      
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 60: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 90: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 90: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 4/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @738                    
+#   data_key                     integral  1     'h1                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    90                      
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 90: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 120: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 120: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 5/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @746                    
+#   data_key                     integral  1     'h1                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    120                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 120: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 150: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 150: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 6/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @754                    
+#   data_key                     integral  1     'h0                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    150                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 150: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 180: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 180: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 7/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @762                    
+#   data_key                     integral  1     'h1                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    180                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 180: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 210: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 210: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 8/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @770                    
+#   data_key                     integral  1     'h0                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    210                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 210: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 240: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 240: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 9/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @778                    
+#   data_key                     integral  1     'h0                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    240                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 240: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 270: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 270: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 10/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @786                    
+#   data_key                     integral  1     'h0                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    270                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 270: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 300: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 300: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 11/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @794                    
+#   data_key                     integral  1     'h1                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    300                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 300: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 330: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 330: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 12/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @802                    
+#   data_key                     integral  1     'h1                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    330                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 330: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 360: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 360: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 13/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @810                    
+#   data_key                     integral  1     'h0                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    360                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 360: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 390: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 390: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 14/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @818                    
+#   data_key                     integral  1     'h0                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    390                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 390: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 420: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 420: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 15/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @826                    
+#   data_key                     integral  1     'h1                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    420                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 420: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 450: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 450: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 16/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @834                    
+#   data_key                     integral  1     'h0                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    450                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 450: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 480: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 480: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 17/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @842                    
+#   data_key                     integral  1     'h0                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    480                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 480: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 510: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 510: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 18/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @850                    
+#   data_key                     integral  1     'h0                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    510                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 510: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 540: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 540: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 19/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @858                    
+#   data_key                     integral  1     'h0                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    540                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 540: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 570: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 570: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 20/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @866                    
+#   data_key                     integral  1     'h1                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    570                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 570: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 600: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 600: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 21/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @874                    
+#   data_key                     integral  1     'h0                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    600                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 600: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 630: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 630: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 22/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @882                    
+#   data_key                     integral  1     'h0                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    630                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 630: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 660: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 660: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 23/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @890                    
+#   data_key                     integral  1     'h0                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    660                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 660: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 690: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 690: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 24/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @898                    
+#   data_key                     integral  1     'h0                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    690                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 690: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 720: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 720: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 25/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @906                    
+#   data_key                     integral  1     'h1                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    720                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 720: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 750: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 750: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 26/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @914                    
+#   data_key                     integral  1     'h1                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    750                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 750: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 780: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 780: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 27/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @922                    
+#   data_key                     integral  1     'h1                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    780                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 780: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 810: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 810: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 28/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @930                    
+#   data_key                     integral  1     'h0                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    810                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 810: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 840: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 0 data0 = 11100001000 data1 = 00000000000
+# UVM_ERROR ../src/simulation/testbench.sv(176) @ 840: uvm_test_top.e0.sb0 [Scoreboard] PASS! expected = 11100001000, got = 11100001000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 840: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 29/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @938                    
+#   data_key                     integral  1     'h1                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    840                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 840: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 870: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 1 data0 = 11100001000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 870: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 30/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @946                    
+#   data_key                     integral  1     'h1                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    870                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 870: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 900: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 1 data0 = 11100001000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 900: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 31/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @954                    
+#   data_key                     integral  1     'h0                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    900                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 900: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 930: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 0 data0 = 11100001000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 930: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 32/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @962                    
+#   data_key                     integral  1     'h0                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    930                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 930: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 960: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 0 data0 = 11100001000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 960: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 33/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @970                    
+#   data_key                     integral  1     'h1                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    960                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 960: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 990: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 1 data0 = 11100001000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 990: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 34/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @978                    
+#   data_key                     integral  1     'h0                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    990                     
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 990: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 1020: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 0 data0 = 11100001000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 1020: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 35/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @986                    
+#   data_key                     integral  1     'h1                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    1020                    
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 1020: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 1050: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 1 data0 = 11100001000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 1050: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 36/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @994                    
+#   data_key                     integral  1     'h0                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    1050                    
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 1050: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 1080: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 0 data0 = 11100001000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 1080: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 37/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @1002                   
+#   data_key                     integral  1     'h1                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    1080                    
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 1080: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 1110: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 1 data0 = 11100001000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 1110: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 38/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @1010                   
+#   data_key                     integral  1     'h1                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    1110                    
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 1110: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 1140: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 1 data0 = 11100001000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 1140: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 39/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @1018                   
+#   data_key                     integral  1     'h1                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    1140                    
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 1140: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 1170: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 1 data0 = 11010100110 data1 = 11100001000
+# UVM_ERROR ../src/simulation/testbench.sv(176) @ 1170: uvm_test_top.e0.sb0 [Scoreboard] PASS! expected = 11010100110, got = 11010100110
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 1170: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 40/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @1026                   
+#   data_key                     integral  1     'h0                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    1170                    
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 1170: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 1200: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 0 data0 = 11010100110 data1 = 11100001000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 1200: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 41/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @1034                   
+#   data_key                     integral  1     'h1                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    1200                    
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 1200: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 1230: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 1 data0 = 11010100110 data1 = 11100001000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 1230: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 42/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @1042                   
+#   data_key                     integral  1     'h0                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    1230                    
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 1230: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 1260: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 0 data0 = 11010100110 data1 = 11100001000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 1260: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 43/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @1050                   
+#   data_key                     integral  1     'h1                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    1260                    
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 1260: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 1290: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 1 data0 = 11010100110 data1 = 11100001000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 1290: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 44/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @1058                   
+#   data_key                     integral  1     'h0                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    1290                    
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 1290: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 1320: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 0 data0 = 11010100110 data1 = 11100001000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 1320: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 45/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @1066                   
+#   data_key                     integral  1     'h0                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    1320                    
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 1320: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 1350: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 0 data0 = 11010100110 data1 = 11100001000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 1350: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 46/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @1074                   
+#   data_key                     integral  1     'h0                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    1350                    
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 1350: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 1380: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 0 data0 = 11010100110 data1 = 11100001000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 1380: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 47/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @1082                   
+#   data_key                     integral  1     'h0                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    1380                    
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 1380: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 1410: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 0 data0 = 11010100110 data1 = 11100001000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 1410: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 48/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @1090                   
+#   data_key                     integral  1     'h0                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    1410                    
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 1410: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 1440: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 0 data0 = 11010100110 data1 = 11100001000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 1440: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 49/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @1098                   
+#   data_key                     integral  1     'h0                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    1440                    
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 1440: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 1470: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 0 data0 = 11010100110 data1 = 11100001000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 1470: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 50/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @1106                   
+#   data_key                     integral  1     'h1                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    1470                    
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 1470: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 1500: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 1 data0 = 11010100110 data1 = 11100001000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 1500: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 51/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @1114                   
+#   data_key                     integral  1     'h1                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    1500                    
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 1500: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 1530: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 1 data0 = 11010100110 data1 = 11100001000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 1530: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 52/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @1122                   
+#   data_key                     integral  1     'h1                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    1530                    
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 1530: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 1560: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 1 data0 = 11010100110 data1 = 11100001000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 1560: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 53/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @1130                   
+#   data_key                     integral  1     'h1                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    1560                    
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 1560: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 1590: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 1 data0 = 11010100110 data1 = 11100001000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 1590: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 54/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @1138                   
+#   data_key                     integral  1     'h0                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    1590                    
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 1590: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 1620: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 0 data0 = 11010100110 data1 = 11100001000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 1620: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 55/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @1146                   
+#   data_key                     integral  1     'h1                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    1620                    
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 1620: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 1650: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 1 data0 = 11010100110 data1 = 11100001000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 1650: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 56/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @1154                   
+#   data_key                     integral  1     'h0                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    1650                    
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 1650: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 1680: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 0 data0 = 11010100110 data1 = 11100001000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 1680: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 57/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @1162                   
+#   data_key                     integral  1     'h0                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    1680                    
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 1680: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 1710: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 0 data0 = 11010100110 data1 = 11100001000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 1710: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 58/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @1170                   
+#   data_key                     integral  1     'h1                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    1710                    
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 1710: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 1 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 1740: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 1 data0 = 11010100110 data1 = 11100001000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 1740: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 59/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @1178                   
+#   data_key                     integral  1     'h0                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    1740                    
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 1740: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 1770: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 0 data0 = 11010100110 data1 = 11100001000
+# UVM_INFO ../src/simulation/testbench.sv(48) @ 1770: uvm_test_top.e0.a0.s0@@g0 [Generator] Item 60/60 created
+# -----------------------------------------------------------------------
+# Name                           Type      Size  Value                   
+# -----------------------------------------------------------------------
+# item                           ps2_item  -     @1186                   
+#   data_key                     integral  1     'h0                     
+#   clk_key                      integral  1     'h0                     
+#   data0                        integral  11    'h0                     
+#   data1                        integral  11    'h0                     
+#   begin_time                   time      64    1770                    
+#   depth                        int       32    'd2                     
+#   parent sequence (name)       string    2     g0                      
+#   parent sequence (full name)  string    24    uvm_test_top.e0.a0.s0.g0
+#   sequencer                    string    21    uvm_test_top.e0.a0.s0   
+# -----------------------------------------------------------------------
+# UVM_INFO ../src/simulation/testbench.sv(79) @ 1770: uvm_test_top.e0.a0.d0 [Driver] clk_key = 0 data_key = 0 data0 = 00000000000 data1 = 00000000000
+# UVM_INFO ../src/simulation/testbench.sv(119) @ 1800: uvm_test_top.e0.a0.m0 [Monitor] clk_key = 0 data_key = 0 data0 = 11010100110 data1 = 11100001000
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 1800: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  185
+# UVM_WARNING :    0
+# UVM_ERROR :    2
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Driver]    60
+# [Generator]    60
+# [Monitor]    60
+# [Questa UVM]     2
+# [RNTST]     1
+# [Scoreboard]     2
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# ** Note: $finish    : C:/questasim64_10.4c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 1800 ps  Iteration: 61  Instance: /testbench
+# End time: 16:55:34 on Jan 31,2023, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 1
